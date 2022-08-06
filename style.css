@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-top {
+    position: relative;
+}
+
+.linkList {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.check-check-1 {
+    display: block;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #1d809f;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: all linear 0.2s;
+    opacity: 0;
+}
+
+li.li-item:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#input-check:checked~#sidebar-wrapper {
+    transform: translateX(0);
+    opacity: 1;
+    transition: all 0.2s
+}
+
+.masthead {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(./resources/images/bg-masthead.jpg);
+    padding: 8rem 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+i.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    padding: 0px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    z-index: 2;
+}
+
+.menu-toggle1 {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 0px 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    z-index: 2;
+}
+
+a.btn-xl {
+    padding: 1.25rem 2.5rem;
+}
+
+.menu-toggle1:hover {
+    background: rgba(52, 58, 64, 1);
+}
+
+.menu-toggle:hover {
+    background: #343a40;
+    color: #fff;
+}
+
+li.link-list1 {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: rgba(52, 58, 64, 0.1);
+    height: 80px;
+    line-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+li.link-list1 a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+li.li-item {
+    list-style: none;
+    display: block;
+    padding: 15px 0;
+    padding-left: 15px;
+}
+
+a.link-list {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul.nav-ul {
+    padding-left: 0;
+}
+
+.container {
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.title-h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.service-icon {
+    background-color: #fff;
+    text-align: center;
+    color: #1D809F;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7rem;
+    font-size: 2.25rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.callout {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(./resources/images/bg-callout.jpg);
+    padding: 8rem 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+div.container {
+    padding: 7.5rem 0;
+}
+
+section.bg-primary {
+    background-color: rgb(29, 128, 159) !important
+}
+
+.callout h2,
+.callout .h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    max-width: 30rem;
+}
+
+/* Portfolio */
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.portfolio-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+}
+
+.portfolio-item:hover::before {
+    bottom: 0;
+    height: 100%;
+    background-color: hsla(196, 69%, 29%, 0.75);
+}
+
+.portfolio-item .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.portfolio-item .caption .caption-content {
+    color: #fff;
+    margin: auto 2rem 2rem;
+}
+
+.portfolio-item:hover {
+    transform: scale(0.9);
+}
+
+.map iframe {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.map {
+    height: 30rem;
+}
+
+footer.footer .social-link {
+    display: block;
+    text-decoration: none;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    background-color: #1D809F;
+    transition: background-color 0.15s ease-in-out;
+    box-shadow: 0 3px 3px 0 rgb(0 0 0 / 10%);
+}
+
+footer.footer .social-link:hover {
+    background-color: #155d74;
+}
+
+@media (max-width: 991px) {
+    div.mg-t {
+        margin-top: 1.2rem !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    a.btn-sm1 {
+        padding: 1rem 1.25rem;
+    }
+}
+
+button#scroll-btn {
+    display: none;
+}
